@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Becerra Ortiz">
+    <meta name="description" content="ComponentesTodoPCs.com es tu fuente de información sobre componentes informáticos. Aprende sobre ordenadores de sobremesa, portátiles y dispositivos móviles, y vende tus componentes usados.">
+    <meta name="keywords" content="componentes, informática, ordenadores, portátiles, venta, compra, tecnología, PC, componentes de PC">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ComponentesTodoPCs.com | Construye tu futuro, pieza por pieza">
+    <meta property="og:description" content="Encuentra información didáctica sobre componentes de dispositivos informáticos y vende tus componentes usados.">
+    <meta property="og:image" content="./img/componentes.webp">
+    <meta property="og:site_name" content="ComponentesTodoPCs.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.componentestodopcs.com">
+    <meta property="og:locale" content="es_ES">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/642750f5b9.js" crossorigin="anonymous"></script>
+    <title>Atención al cliente | ComponentesTodoPCs.com</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>ComponentesTodoPCs.com Construye tu futuro, pieza por pieza</h1>
+        <div><i aria-hidden="true" class="fa-solid fa-microchip"></i></div>
+        <nav id="menu">
+            <ul>
+                <li><a role="button" title="Página principal" href="./index.html">Volver a la página principal</a></li>
+                <li><a role="button" title="Página de registro" href="./signup.html">Registrate</a></li>
+            </ul>
+        </nav>
+        <img src="./img/pccomponentes.jpg" alt="Logo de la página">
+    </header>
+    <main>
+        <article>
+            <header><h2>Atención al cliente</h2></header>
+            <section>
+                <header><h2>¡Ponte en contacto con nosotros por medio del siguiente formulario!</h2></header>
+                <form method="post" action="envio.php" enctype="multipart/form-data">
+                    <fieldset class="formulario">
+                        <legend>Por favor, rellene todos los campos antes de enviar la reclamación</legend>
+                        <span>
+                            <label aria-describedby="username" for="username">Usuario: *</label>
+                            <input aria-required="true" type="text" name="username" id="username" placeholder="psantosr06" tabindex="1" minlength="6" required>
+                        </span>
+                        <span>
+                            <label aria-describedby="email" for="email">Correo electrónico: *</label>
+                            <input aria-required="true" type="email" name="email" id="email" placeholder="psantosr06@suarezdefigueroa.es" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" title="Dirección de correo electrónico invalida" tabindex="2" required>
+                        </span>
+                        <span>
+                            <label aria-describedby="asunto" for="asunto">Asunto: *</label>
+                        <input aria-required="true" type="text" name="asunto" id="asunto" list="asunto_reclamacion" placeholder="Asunto de la reclamación" tabindex="3" required>
+                        <datalist id="asunto_reclamacion">
+                            <option value="El pedido ha llegado dañado a mi domicilio"></option>
+                            <option value="Me ha llegado un pedido equivocado"></option>
+                            <option value="Los productos están defectuosos"></option>
+                            <option value="El pedido está incompleto"></option>
+                            <option value="Quiero devolver un pedido"></option>
+                        </datalist>
+                        </span>
+                        <span class="reclamacion">
+                            <label aria-describedby="reclamacion_cliente" for="reclamacion_cliente">Introduzca un mensaje: *</label>
+                            <textarea aria-required="true" name="reclamacion_cliente" id="reclamacion_cliente" rows="6" cols="50" placeholder="Mensaje explicativo de la reclamación... *" tabindex="4" required></textarea>
+                        </span>
+                        <div>
+                            <input aria-label="Enviar formulario" type="submit" value="Enviar" tabindex="5">
+                            <input aria-label="Borrar contenido formulario" type="reset" value="Borrar datos">
+                        </div>
+                        <a href="./resources/condiciones_de_compra.pdf" target="_blank" download="Condiciones de Compra">Haga click aquí para descargar las condiciones de compra</a>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <aside>
+            <article>
+                <header>
+                    <h3>Otra información de interés</h3>
+                </header>
+                <section>
+                    <h3>Localización de sede</h3>
+                    <i aria-hidden="true" class="fa-solid fa-street-view"></i>
+                    <i aria-hidden="true" class="fa-solid fa-location-crosshairs"></i>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.3816442331636!2d-1.3877691999999997!3d37.82795039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd648ef041b23d07%3A0xb905c61ac3a266fd!2sPcComponentes!5e0!3m2!1ses!2ses!4v1707156558701!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li><a role="button" title="Página de información de la empresa" href="https://www.pccomponentes.com/quienes-somos" target="_blank">Quienes somos</a></li>
+            <li><a role="button" title="Políticas de privacidad del sitio" href="https://www.pccomponentes.com/privacidad" target="_blank">Privacidad</a></li>
+            <li><a role="button" title="Condiciones de compra" href="https://www.pccomponentes.com/condiciones-de-compra" target="_blank">Condiciones de compra</a></li>
+            <li><a role="button" title="Política de devoluciones y garantías" href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-Garant%C3%ADas-y-devoluciones" target="_blank">Devoluciones y garantías</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a role="button" title="Enlace a red social Twitter" href="https://twitter.com/pccomponentes" target="_blank"><svg class="icon_defaultIcon__pltkn10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" fill="inherit" data-testid="link-icon"><path d="M2.6077 2.87183L10.1131 12.9073L2.5603 21.0666H4.26014L10.8726 13.923L16.2154 21.0666H22L14.0723 10.4666L21.1024 2.87183H19.4025L13.3128 9.45092L8.39233 2.87183H2.6077ZM5.10744 4.12393H7.76492L19.4999 19.8143H16.8424L5.10744 4.12393Z"></path></svg><span>Twitter</span></a></li>
+            <li><a role="button" title="Enlace a red social Instagram" href="https://www.instagram.com/pccomponentes/" target="_blank"><svg class="icon_defaultIcon__pltkn10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" fill="inherit" data-testid="link-icon"><path d="M16.5,2h-9C4.5,2,2,4.5,2,7.5v9c0,3,2.5,5.5,5.5,5.5h9c3,0,5.5-2.5,5.5-5.5v-9C22,4.5,19.5,2,16.5,2z M20.2,16.5 c0,2.1-1.7,3.7-3.7,3.7h-9c-2.1,0-3.7-1.7-3.7-3.7v-9c0-2.1,1.7-3.7,3.7-3.7h9c2.1,0,3.7,1.7,3.7,3.7V16.5L20.2,16.5z"></path><path d="M12,6.8c-2.8,0-5.2,2.3-5.2,5.2c0,2.8,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,9.2,14.8,6.8,12,6.8z M12,15.4 c-1.9,0-3.4-1.5-3.4-3.4s1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4S13.9,15.4,12,15.4z"></path><circle cx="17.4" cy="6.6" r="1.3"></circle></svg><span>Instagram</span></a></li>
+            <li><a role="button" title="Enlace a red social Facebook" href="https://www.facebook.com/pccomponentes" target="_blank"><svg class="icon_defaultIcon__pltkn10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" fill="inherit" data-testid="link-icon"><path d="M20.9 2h-17.8c-.6 0-1.1.5-1.1 1.1v17.8c0 .6.5 1.1 1.1 1.1h9.6v-7.7h-2.6v-3h2.6v-2.3c0-2.6 1.6-4 3.9-4 1.1 0 2.1.1 2.3.1v2.7h-1.6c-1.3 0-1.5.6-1.5 1.5v1.9h3l-.4 3h-2.6v7.8h5.1c.6 0 1.1-.5 1.1-1.1v-17.8c0-.6-.5-1.1-1.1-1.1z"></path></svg><span>Facebook</span></a></li>
+        </ul>
+        <address>
+            <span>Componentes Todo PCs SLU CIF B73347494 AVDA Europa, Parcela 2-5 y 2-6 Polígono industrial Las Salinas, 30840 lhama de Murcia, Murcia España</span>
+        </address>
+    </footer>
+</body>
+</html>
